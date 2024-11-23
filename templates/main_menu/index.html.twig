@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} Accueil {% endblock %}
+
+{% block body %}
+    <h1>Menu principal</h1>
+    <ul>
+        <li><a href="{{ path('app_register') }}">S'enregister</a></li>
+        <li><a href="{{ path('app_login') }}">Se connecter</a></li>
+        <li><a href="{{ path('app_uploaded_image_new') }}">Upload image</a></li>
+        <li><a href="{{ path('app_uploaded_image_index') }}">Liste des images</a></li>
+
+
+    </ul>
+{% endblock %}

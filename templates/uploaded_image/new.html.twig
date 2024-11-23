@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New UploadedImage{% endblock %}
+
+{% block body %}
+    <h1>Create new UploadedImage</h1>
+
+    {{ include('uploaded_image/_form.html.twig') }}
+
+    <a href="{{ path('app_uploaded_image_index') }}">back to list</a>
+{% endblock %}
